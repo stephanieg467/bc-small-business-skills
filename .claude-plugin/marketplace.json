@@ -1,0 +1,11 @@
+{
+  "name": "bc-small-business-skills",
+  "owner": { "name": "Stephanie" },
+  "plugins": [
+    {
+      "name": "bc-small-business",
+      "source": "./plugin",
+      "description": "Bookkeeping, payroll, tax, email and reporting skills for BC small businesses using Sage 50 Canada, Cova and Zoho Mail."
+    }
+  ]
+}
