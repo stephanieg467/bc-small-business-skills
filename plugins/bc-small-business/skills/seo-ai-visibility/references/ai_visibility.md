@@ -69,44 +69,7 @@ The check is simple and worth doing on every important page. The fix ranges from
 
 ---
 
-## 3. llms.txt
-
-A plain-text file at the site root that describes the business in language a machine can use directly. It is a young convention, not a mandated standard — say that, and note that it costs twenty minutes.
-
-```
-# Ridgeline Pool & Spa
-
-> Residential pool and hot tub service in the Central Okanagan, BC.
-> Family-owned since 2009.
-
-## What we do
-- Pool openings and closings
-- Weekly maintenance plans, May to September
-- Pump, filter and heater repair; heat pump installs
-- Hot tub service
-
-## Where we work
-Kelowna, West Kelowna, Lake Country and Peachland, BC.
-
-## Hours
-Monday-Friday 8am-5pm. Saturday 9am-1pm, May to September only.
-
-## Contact
-Phone: 250-555-0134
-Email: service@ridgelinepools.ca
-Address: 1880 Example Road, Kelowna, BC
-
-## Key pages
-- Services: https://ridgelinepools.ca/services
-- Maintenance plans: https://ridgelinepools.ca/plans
-- Contact: https://ridgelinepools.ca/contact
-```
-
-Facts only, verified with the owner. Every line here is something an assistant may repeat to a customer, so a wrong hour or a stale phone number does direct damage.
-
----
-
-## 4. Structured data
+## 3. Structured data
 
 Schema.org JSON-LD makes facts explicit instead of leaving them to be inferred from prose. Both search engines and assistants read it.
 
@@ -123,7 +86,7 @@ Two rules. **Only mark up what is visible on the page** — marking up content a
 
 ---
 
-## 5. Fact clarity
+## 4. Fact clarity
 
 Assistants quote what is stated plainly and skip what is buried in marketing language.
 
@@ -137,7 +100,7 @@ Contradictions are the quiet killer. Two phone numbers, three sets of hours, an 
 
 ---
 
-## 6. Off-site presence
+## 5. Off-site presence
 
 Assistants lean heavily on third-party sources. A business absent from them is close to invisible regardless of site quality.
 
@@ -150,7 +113,7 @@ Name, address, and phone must match the website character for character. Mismatc
 
 ---
 
-## 7. The assistant test
+## 6. The assistant test
 
 Ask what a customer would ask, in several phrasings, and record what comes back verbatim.
 

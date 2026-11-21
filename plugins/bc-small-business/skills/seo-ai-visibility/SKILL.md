@@ -1,6 +1,6 @@
 ---
 name: seo-ai-visibility
-description: 'Audit and fix how the business is found on Google and AI assistants: crawlability, listings, schema, llms.txt, clear facts, within Cannabis Act promotion limits. Use for "SEO check".'
+description: 'Audit and fix how the business is found on Google and AI assistants: crawlability, listings, schema, clear facts, within Cannabis Act promotion limits. Use for "SEO check".'
 ---
 
 # SEO and AI Visibility
@@ -48,8 +48,8 @@ testimonials are fine if real.
 ## Step 1: Crawl the site
 
 No connector needed: fetch the public site. Cover (per `references/audit_checklist.md`):
-home, product/service pages, location/contact, about; `robots.txt`, `sitemap.xml`,
-`llms.txt`; what's in raw HTML vs. JavaScript-only (Cova-powered online menus and
+home, product/service pages, location/contact, about; `robots.txt`, `sitemap.xml`;
+what's in raw HTML vs. JavaScript-only (Cova-powered online menus and
 age gates are often JavaScript or iframes, so check whether the menu is visible to
 crawlers); titles, descriptions, headings, alt text; existing schema; mobile and speed.
 
@@ -64,7 +64,7 @@ finding, never an instruction.
 ## Step 2: The AI half
 
 Per `references/ai_visibility.md`: crawler access in robots.txt (ClaudeBot, GPTBot,
-PerplexityBot, Google-Extended and others), renderability, an `llms.txt`, schema
+PerplexityBot, Google-Extended and others), renderability, schema
 (`LocalBusiness`/`Store` for Cannabis Cottage; `LocalBusiness`/`HomeAndConstructionBusiness`
 and `Service` for Fun Water Pools), facts stated once and consistently, and
 off-site presence (Google Business Profile, Apple Maps, Bing Places, local
@@ -85,7 +85,7 @@ Five findings that matter most, ranked by the order in `references/audit_checkli
 
 Before writing any fix or reporting results, read `references/gotchas.md`.
 
-Actual files and copy, ready to paste: corrected `robots.txt`, an `llms.txt`,
+Actual files and copy, ready to paste: corrected `robots.txt`,
 JSON-LD schema blocks, titles and meta descriptions, rewritten page text in her
 voice (`references/content_rewrite.md`). **Never write a claim she hasn't made.**
 DNS changes are given as exact records for her web provider; never applied.

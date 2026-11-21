@@ -19,7 +19,6 @@ This runs on any public website with no connector. Fetch the pages, read the HTM
 | Blog or resources, recent items | Whether content is current and whether it answers real questions |
 | `/robots.txt` | Crawler rules, including AI crawlers |
 | `/sitemap.xml` | Whether pages are discoverable at all |
-| `/llms.txt` | Usually absent — that is a finding |
 
 Name anything unreachable. A 404 on a page linked from the main menu is itself a finding.
 
@@ -102,9 +101,8 @@ The usual order, which holds for most small sites:
 3. Correct wrong or contradictory facts — high impact, small effort
 4. Claim and complete business listings — high impact, medium effort
 5. Add schema.org structured data — high impact, small effort
-6. Publish llms.txt — medium impact, small effort
-7. Fix titles and meta descriptions — medium impact, small effort
-8. Rewrite thin or unanswering content — high impact, large effort
+6. Fix titles and meta descriptions — medium impact, small effort
+7. Rewrite thin or unanswering content — high impact, large effort
 
 ---
 
@@ -126,7 +124,7 @@ Fix these five, in order:
 2. No schema.org markup on any page              High impact · 1 hour
 3. Service area says "the Okanagan" — no towns  High impact · 30 minutes
 4. Google Business Profile hours are wrong       High impact · 15 minutes
-5. No llms.txt                                   Medium impact · 20 minutes
+5. Homepage title is just "Home"                 Medium impact · 10 minutes
 
 Nine more findings in the appendix, none urgent.
 
