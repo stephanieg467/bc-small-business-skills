@@ -1,11 +1,25 @@
 {
   "name": "bc-small-business-skills",
-  "owner": { "name": "Stephanie" },
+  "owner": {
+    "name": "Stephanie"
+  },
+  "description": "Claude skills for BC small businesses: bookkeeping, payroll, GST/PST, email and reporting with Sage 50 Canada, Cova and Zoho Mail.",
   "plugins": [
     {
       "name": "bc-small-business",
-      "source": "./plugin",
-      "description": "Bookkeeping, payroll, tax, email and reporting skills for BC small businesses using Sage 50 Canada, Cova and Zoho Mail."
+      "source": "./plugins/bc-small-business",
+      "description": "Bookkeeping, payroll, tax, email and reporting skills for BC small businesses using Sage 50 Canada, Cova and Zoho Mail.",
+      "keywords": [
+        "small-business",
+        "bookkeeping",
+        "payroll",
+        "tax",
+        "british-columbia",
+        "canada",
+        "sage50",
+        "cova",
+        "zoho-mail"
+      ]
     }
   ]
 }

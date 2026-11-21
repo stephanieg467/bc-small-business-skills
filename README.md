@@ -21,6 +21,23 @@ Needs a paid Claude plan (Pro, Max, Team or Enterprise).
 To get updates, open the marketplace in **Customize → Plugins** and click **Check
 for updates**, or turn on **Sync automatically**.
 
+### Claude Code (terminal or the desktop app's Code tab)
+
+```
+/plugin install bc-small-business --marketplace stephanieg467/bc-small-business-skills
+```
+
+On older Claude Code versions, add the marketplace first:
+
+```
+/plugin marketplace add stephanieg467/bc-small-business-skills
+/plugin install bc-small-business@bc-small-business-skills
+```
+
+Auto-update is off by default for third-party marketplaces. To turn it on, run
+`/plugin`, open **Marketplaces**, select **bc-small-business-skills** and enable
+**Auto-update**.
+
 ## The 16 skills
 
 | Say | Skill |
@@ -49,6 +66,39 @@ for updates**, or turn on **Sync automatically**.
 - Tax and payroll facts were checked in November 2026. The skills tell Claude to
   re-check rates and deadlines before relying on them. Everything tax-related is
   prepared for her accountant, not tax advice.
-- Skills live in `plugin/skills/`. The shared rules live once in `common/`. To
-  change a rule everywhere, edit `common/`, run `./sync-common.sh` to copy it into
-  each skill's `references/common/`, and commit.
+
+## Maintaining this marketplace
+
+### Layout
+
+```
+bc-small-business-skills/
+├── .claude-plugin/marketplace.json        # marketplace catalog (lists the plugin)
+├── plugins/
+│   └── bc-small-business/
+│       ├── .claude-plugin/plugin.json     # plugin manifest; its version is what users get
+│       └── skills/<skill>/SKILL.md        # the 16 skills
+├── common/                                # shared rules, copied into every skill
+└── sync-common.sh                         # copies common/ into each skill's references/common/
+```
+
+### Changing shared rules
+
+Edit `common/`, run `./sync-common.sh` to copy it into each skill's
+`references/common/`, and commit. Each skill gets its own copy so it stays
+self-contained.
+
+### Releasing updates
+
+Installed copies only pick up changes when the plugin's version changes. After
+editing skills, bump `version` in
+`plugins/bc-small-business/.claude-plugin/plugin.json` (for example 1.0.0 → 1.0.1),
+then commit and push.
+
+### Checking before you push
+
+With Claude Code installed, from the repo root:
+
+```bash
+claude plugin validate .
+```
